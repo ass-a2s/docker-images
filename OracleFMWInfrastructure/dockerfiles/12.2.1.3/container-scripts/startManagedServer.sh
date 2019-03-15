@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Copyright (c) 2014-2017 Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2014-2018 Oracle and/or its affiliates. All rights reserved.
 #
 #Licensed under the Universal Permissive License v 1.0 as shown at http://oss.oracle.com/licenses/upl.
 #
@@ -9,12 +9,12 @@
 
 export adminhostname=$adminhostname
 export adminport=$adminport
-
+export DOMAIN_NAME=$DOMAIN_NAME
 
 # First Update the server in the domain
 export server="infra_server1"
 export DOMAIN_ROOT="/u01/oracle/user_projects/domains"
-export DOMAIN_HOME="/u01/oracle/user_projects/domains/InfraDomain"
+export DOMAIN_HOME="/u01/oracle/user_projects/domains/$DOMAIN_NAME"
 
 echo $adminhostname
 echo $adminport
